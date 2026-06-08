@@ -18,11 +18,11 @@ void exibir_menu(void) {
     printf("=== Sistema de Gerenciamento de Tarefas ===\n");
     printf("1 - Adicionar tarefa \n");
     printf("2 - Listar tarefas pendentes \n");
-    printf("3 - Concluir próxima tarefa \n");
-    printf("4 - Desfazer última tarefa concluída \n");
-    printf("5 - Listar histórico de tarefas concluídas \n");
+    printf("3 - Concluir tarefa \n");
+    printf("4 - Desfazer ultima tarefa concluida \n");
+    printf("5 - Listar historico de tarefas concluidas \n");
     printf("6 - Sair \n");
-    printf("Escolha: ");
+    printf("-> ");
 }
 
 void adicionar_tarefa(Fila *fila) {
@@ -37,7 +37,7 @@ void adicionar_tarefa(Fila *fila) {
         descricao[len - 1] = '\0';
 
     if (strlen(descricao) == 0) {
-        printf("Descrição não pode estar vazia.\n");
+        printf("A descricao não pode estar vazia.\n");
         return;
     }
 
