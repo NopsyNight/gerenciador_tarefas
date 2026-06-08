@@ -1,13 +1,3 @@
-/*
- * fila.h — Fila encadeada (FIFO)
- *
- * Cada nó guarda uma string (descrição da tarefa).
- * A fila mantém ponteiros para a cabeça (frente) e para a cauda (fim).
- * Enqueue na cauda: O(1)
- * Dequeue na cabeça: O(1)
- * Enqueue_frente (para desfazer): O(1)
- */
-
 #ifndef FILA_H
 #define FILA_H
 

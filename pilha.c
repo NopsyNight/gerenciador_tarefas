@@ -1,14 +1,3 @@
-/*
- * pilha.c — Implementação da pilha encadeada (LIFO)
- *
- * Visualização interna:
- *
- *  [topo] → [nó3] → [nó2] → [nó1] → NULL
- *
- *  Push: cria nó, nó->abaixo = topo, topo = nó
- *  Pop:  salva topo, topo = topo->abaixo, libera nó salvo
- */
-
 #include "pilha.h"
 #include <stdio.h>
 #include <stdlib.h>

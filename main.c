@@ -89,11 +89,6 @@ void desfazer_conclusao(Fila *fila, Pilha *historico) {
         printf("\nErro ao desfazer.\n");
         return;
     }
-
-    /*
-     * Reinsere na FRENTE da fila. Como nossa fila é FIFO,
-     * precisamos de um enqueue_frente para restaurar a ordem correta.
-     */
     if (fila_enqueue_frente(fila, descricao)) {
         printf("\nDesfeito! Tarefa devolvida: \"%s\"\n", descricao);
     } else {

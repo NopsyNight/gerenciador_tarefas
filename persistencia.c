@@ -1,19 +1,3 @@
-/*
- * persistencia.c — Serialização/deserialização do estado
- *
- * Ao SALVAR:
- *   1. Percorre a fila da frente ao fim e escreve linha a linha.
- *   2. Percorre a pilha do topo à base (salva na ordem mais-recente-primeiro).
- *
- * Ao CARREGAR a fila:
- *   Faz enqueue de cada linha lida (preserva ordem FIFO).
- *
- * Ao CARREGAR o histórico:
- *   A pilha foi salva mais-recente-primeiro.
- *   Para recriar a mesma ordem, precisamos empilhar em ordem INVERSA
- *   (do mais antigo ao mais recente), portanto usamos um array temporário.
- */
-
 #include "persistencia.h"
 #include <stdio.h>
 #include <stdlib.h>

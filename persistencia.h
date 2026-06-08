@@ -1,22 +1,3 @@
-/*
- * persistencia.h — Leitura e escrita do estado em disco
- *
- * Formato do arquivo .dat (texto simples):
- *
- *   FILA <N>
- *   tarefa um
- *   tarefa dois
- *   ...
- *   HISTORICO <M>
- *   tarefa mais recente (topo da pilha)
- *   tarefa mais antiga
- *   ...
- *
- * Escolha do formato: texto puro foi preferido a CSV ou binário
- * porque é legível por humanos (facilita debug), portável entre
- * arquiteturas e simples de parsear linha a linha com fgets.
- */
-
 #ifndef PERSISTENCIA_H
 #define PERSISTENCIA_H
 
